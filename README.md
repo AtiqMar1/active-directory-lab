@@ -3,7 +3,7 @@ Building an Active Directory lab to practice user management, group policies, an
 
 
 
-# Active Directory Security Lab (In Progress) 🔐
+# Active Directory Security Lab (In Progress) 
 
  **Overview**  
 This project is a **work in progress**, where I am setting up an **Active Directory (AD) lab** to practice Windows domain administration, security configurations, and incident response techniques.
@@ -33,5 +33,5 @@ This project is a **work in progress**, where I am setting up an **Active Direct
 - Apply **defensive security measures** to mitigate common AD threats.
 - Document findings and best practices.
 
-📌 **Connect With Me**
+ **Connect With Me**
 If you're interested in AD security, feel free to discuss & collaborate!
