@@ -1,37 +1,63 @@
- active-directory-lab
-Building an Active Directory lab to practice user management, group policies, and security configurations.
+ active-directory-Project
+This project sets up an Active Directory (AD) lab using VirtualBox to simulate a domain environment. It demonstrates user management, organizational units (OUs), group policies (GPOs), and security settings for better Windows network administration.
 
+Lab Setup
 
+VMs Used:
 
-# Active Directory Security Lab (In Progress) 
+Windows Server 2022 (Domain Controller - DC)
 
- **Overview**  
-This project is a **work in progress**, where I am setting up an **Active Directory (AD) lab** to practice Windows domain administration, security configurations, and incident response techniques.
+Windows 11 (Domain-joined client)
 
- **Goals of the Lab**
-- Deploy and configure **Active Directory Domain Services (AD DS)**.
-- Implement **user authentication & group policies**.
-- Set up **logging and monitoring for security incidents**.
-- Perform **privilege escalation & mitigation exercises**.
-- Explore **SIEM integration for threat detection**.
+Network Configuration:
 
-  **Tools & Technologies**
-- **Windows Server 2019/2022**
-- **Active Directory Domain Services (AD DS)**
-- **Group Policy Objects (GPOs)**
-- **PowerShell for automation**
-- **Sysmon & Event Viewer for logging**
+Both VMs are set to the same VirtualBox network.
 
-  **Current Progress**
-- ✅ Installed Windows Server & AD DS  
-- ✅ Created Users & Organizational Units (OUs)  
-- 🔄 Configuring Group Policies (WIP)  
-- 🔄 Implementing security logging & alerts  
+Windows 11 DNS set to the DC IP for domain connectivity.
 
-  **Next Steps**
-- Implement **Kerberoasting & Pass-the-Hash attacks** for red teaming.
-- Apply **defensive security measures** to mitigate common AD threats.
-- Document findings and best practices.
+Active Directory Configuration
 
- **Connect With Me**
-If you're interested in AD security, feel free to discuss & collaborate!
+Installed AD DS Role & Promoted the Server to a Domain Controller.
+
+Created Organizational Units (OUs):
+
+IT: Tim (User) & Sam (Windows 11 VM )
+
+HR: Matt & Sarah (Users)
+
+Added Users & Applied Policies:
+
+Users are forced to change passwords on the first login.
+
+The password policy (length & expiration rules) was enforced.
+
+Joined Windows 11 Machine to the Domain.
+
+Group Policy Management (GPOs)
+
+Password Policy: Enforced strong password requirements.
+
+HR Policy:
+Password Policy: Enforced strong password requirements.
+
+ Blocked USB device usage.
+
+Issues Faced & Solutions:
+
+Network Connectivity Issues → Fixed by setting the correct VirtualBox network mode & DNS settings.
+
+Windows 11 Losing Network → Resolved by adjusting DNS & IP settings.
+Password Policy: Enforced strong password requirements.
+
+Lessons Learned
+
+Hands-on experience with Active Directory & Group Policy.
+
+Troubleshooting network & user login issues.
+
+Importance of correct DNS settings in a domain environment.
+
+Key Screenshots
+
+"please see screenshots folder "
+
