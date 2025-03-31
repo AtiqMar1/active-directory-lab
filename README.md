@@ -61,5 +61,5 @@ Importance of correct DNS settings in a domain environment.
 
 Key Screenshots
 
-"please see screenshots folder "
+"Please see screenshots"
 
