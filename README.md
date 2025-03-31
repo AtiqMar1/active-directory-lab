@@ -15,7 +15,7 @@ Both VMs are set to the same VirtualBox network.
 
 Windows 11 DNS set to the DC IP for domain connectivity.
 
-Active Directory Configuration
+Active Directory Configuration :
 
 Installed AD DS Role & Promoted the Server to a Domain Controller.
 
@@ -33,9 +33,11 @@ The password policy (length & expiration rules) was enforced.
 
 Joined Windows 11 Machine to the Domain.
 
-Group Policy Management (GPOs)
+Group Policy Management (GPOs):
 
-Password Policy: Enforced strong password requirements.
+Password Policy: Enforced strong password requirements. ( for the whole domain )
+
+Disabled USB access ( HR Department )
 
 HR Policy:
 Password Policy: Enforced strong password requirements.
@@ -49,7 +51,7 @@ Network Connectivity Issues → Fixed by setting the correct VirtualBox network 
 Windows 11 Losing Network → Resolved by adjusting DNS & IP settings.
 Password Policy: Enforced strong password requirements.
 
-Lessons Learned
+Lessons Learned :
 
 Hands-on experience with Active Directory & Group Policy.
 
